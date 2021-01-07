@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react'
 import { Canvas, useFrame } from 'react-three-fiber'
+import { Html } from '@react-three/drei'
 
 function Box(props) {
   // This reference will give us direct access to the mesh
@@ -28,6 +29,9 @@ function Box(props) {
 export default function App() {
   return (
     <Canvas>
+      <Html>
+        <div> <h1> teste caralho</h1></div>
+      </Html>
       <ambientLight intensity={0.5} />
       <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
       <pointLight position={[-10, -10, -10]} />
